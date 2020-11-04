@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:latest
 
-MAINTAINER Daniel Widerin <daniel@widerin.net>
+MAINTAINER Armin Vogt <armin.vogt@sn-invent.de>
 
 ARG OC_VERSION=4.5
 ARG BUILD_DEPS='tar gzip'
@@ -11,6 +11,8 @@ RUN apk --no-cache add $BUILD_DEPS $RUN_DEPS && \
     tar xzvf /tmp/oc.tar.gz -C /usr/local/bin/ && \
     rm -rf /tmp/oc.tar.gz && \
     apk del $BUILD_DEPS
+
+RUN apk --no-cache add git
 
 CMD ["/usr/local/bin/oc"]
 
