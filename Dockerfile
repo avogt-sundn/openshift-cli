@@ -12,7 +12,7 @@ RUN apk --no-cache add $BUILD_DEPS $RUN_DEPS && \
     rm -rf /tmp/oc.tar.gz && \
     apk del $BUILD_DEPS
 
-RUN apk --no-cache add git
+RUN apk --no-cache add git bash
 
 CMD ["/usr/local/bin/oc"]
 
