@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi7/ubi
+FROM registry.access.redhat.com/ubi8/ubi
 
 MAINTAINER Armin Vogt <armin.vogt@sn-invent.de>
 
