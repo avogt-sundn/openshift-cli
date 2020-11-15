@@ -3,7 +3,7 @@ FROM registry.access.redhat.com/ubi8/ubi
 MAINTAINER Armin Vogt <armin.vogt@sn-invent.de>
 
 ARG OC_VERSION=4.5
-ARG BUILD_DEPS='tar gzip'
+ARG BUILD_DEPS='tar gzip rsync'
 ARG RUN_DEPS='curl ca-certificates gettext git bash'
 
 USER root
